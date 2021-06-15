@@ -6,5 +6,10 @@ pipeline {
                 sh 'pwd'
             }
         }
+        stage('git status') {
+            steps {
+                sh 'git status'
+            }
+        }
     }
 }
